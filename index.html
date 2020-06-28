@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script type="text/javascript" src="./js/search.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+    <title>void.idle.host</title>
+</head>
+<body>
+    <div id="mw">
+			<center>
+				<div class="main">
+					<div class="clock"></div>
+						<div class="time">
+							<p id='time'></p>
+						</div>
+					<div class="search">
+						<input id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100" placeholder="Nemesis" size="17" autofocus="autofocus">
+					</div>
+				</div>
+			</center>
+		</div>
+    <div class="container">
+        <div id='youmu' class="card">
+            <div class="front-card">
+                <img id='youmu-img' src="images/youmu.png" alt="" class="image">
+                <div id='category1' class="card-title">
+                </div>
+            </div>
+        </div>
+
+        <div id='suwako' class="card">
+            <div class="front-card">
+                <img id='suwako-img' src="images/suwako.png" alt="" class="image">
+                <div id='category2' class="card-title">
+                </div>
+            </div>
+        </div>
+
+        <div id='reimu' class="card">
+            <div class="front-card">
+                <img id='reimu-img' src="images/reimu.png" alt="" class="image">
+                <div id='category3' class="card-title">
+                </div>
+            </div>
+        </div>
+
+        <div id='marisa' class="card">
+            <div class="front-card">
+                <img id='marisa-img' src="images/marisa.png" alt="" class="image">
+                <div id='category4' class="card-title">
+                </div>
+            </div>
+        </div>
+
+        <div id='koishi' class="card">
+            <div class="front-card">
+                <img id='koishi-img' src="images/koishi.png" alt="" class="image">
+                <div id='category5' class="card-title">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="settings">
+        <div id="center">
+            <br>
+            <br>
+            <label for="background">Background</label><br>
+            <input id='bg' type="text" placeholder="Your background URL here">
+            <br>
+            <br>
+            <label for="message">Welcome Message</label><br>
+            <input id='message' type="text" value='Solitude'>
+            <br>
+            <br>
+            <input id="b1" onclick="darkTheme()" type="radio" value="light theme" name='theme'>
+            <label for="dark-theme">Dark Theme</label><br>
+            <input id="b2" onclick="lightTheme()" type="radio" value="dark theme" name='theme'>
+            <label for="light-theme">Light Theme</label><br>
+            
+        </div>
+    </div>
+
+    <button id='settings-btn'  style="display:none;"></button>
+
+<script src='./js/script.js'></script>
+</body>
+</html>

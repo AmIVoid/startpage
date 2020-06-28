@@ -1,0 +1,26 @@
+# mod_rewrite start
+
+RewriteEngine on
+
+# hide index.html
+
+RewriteRule ^index\.html$ / [R=301,L]
+
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+
+# does not apply to existing directories
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# check for file in directory with .html extension
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# show page with .html extension
+
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+
+# error pages
+
+ErrorDocument 404 /error
